@@ -1,4 +1,3 @@
-CREATE FUNCTION Hoş_Geldiniz (@emcet FLOAT) 
 
 -- Employees tablosu içerisindeki FirstName, LastName, Title kolonlarını listeleyelim
 SELECT
@@ -132,3 +131,15 @@ SELECT
 FROM Customers
 WHERE Country NOT IN ('UK', 'USA', 'Brazil')
 ORDER BY Country ASC;
+
+
+
+---------------------------------------
+CREATE FUNCTION Emcet (@Yas FLOAT) 
+RETURNS FLOAT
+AS
+BEGIN
+    DECLARE @Yıl FLOAT;
+    SET @Yıl = @Yas * 26;
+    RETURN @Yıl;
+END;
