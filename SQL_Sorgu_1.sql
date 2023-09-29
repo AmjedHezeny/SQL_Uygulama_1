@@ -1,4 +1,4 @@
-CREATE FUNCTION emcet 
+CREATE FUNCTION Hoş_Geldiniz (@emcet FLOAT) 
 
 -- Employees tablosu içerisindeki FirstName, LastName, Title kolonlarını listeleyelim
 SELECT
