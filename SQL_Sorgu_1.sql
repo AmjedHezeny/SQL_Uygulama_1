@@ -1,4 +1,14 @@
-﻿-- Employees tablosu içerisindeki FirstName, LastName, Title kolonlarını listeleyelim
+CREATE FUNCTION KDV_hesapla (@Fiyat FLOAT) 
+RETURNS FLOAT
+AS
+BEGIN
+    DECLARE @KDV FLOAT;
+    SET @KDV = @Fiyat * 0.18;
+    RETURN @KDV;
+END;
+
+Go
+-- Employees tablosu içerisindeki FirstName, LastName, Title kolonlarını listeleyelim
 SELECT
     FirstName AS 'Çalışan Adı',
     LastName AS 'Çalışan Soyadı',
